@@ -12,7 +12,7 @@ c. FIFO (mkfifo Library Function or mknod system call)
 #include <unistd.h>
 
 int main() {
-    if (symlink("file", "softl") == -1) {
+    if (symlink("documents", "softl") == -1) {
         perror("symlink failed");
         return 1;
     }
