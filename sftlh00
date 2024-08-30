@@ -1,4 +1,4 @@
-// Deepanshu saini
+// Deepanshu Saini
 // MT2024039
 
 /*
@@ -8,15 +8,13 @@ b. hard link (link system call)
 c. FIFO (mkfifo Library Function or mknod system call)
 */
 
-#include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main() {
-    int status = link("1a.c", "sftlh00");
-    if (status == 0) {
-        printf("Hard link created successfully.\n");
-    } else {
-        perror("link cannot be created");
+    if (symlink("documents", "softl") == -1) {
+        perror("symlink failed");
+        return 1;
     }
     return 0;
 }
