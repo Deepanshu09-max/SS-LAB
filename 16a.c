@@ -26,11 +26,11 @@ int main(int argc, char *argv[]) {
     }
 
     struct flock lock;
-    lock.l_type = F_WRLCK;    // Request a write lock
-    lock.l_whence = SEEK_SET; // Lock from the start of the file
-    lock.l_start = 0;         // Start locking at the beginning
-    lock.l_len = 0;           // Lock the entire file
-    lock.l_pid = getpid();    // Get the process ID
+    lock.l_type = F_WRLCK;    
+    lock.l_whence = SEEK_SET; 
+    lock.l_start = 0;         
+    lock.l_len = 0;         
+    lock.l_pid = getpid();    
 
     // Check if the file is already locked
     struct flock currentLock;
@@ -55,7 +55,6 @@ int main(int argc, char *argv[]) {
         printf("File is now locked for writing.\n");
     }
 
-    // For testing purposes, uncomment the following line to keep the program running:
     // pause();
 
     close(fd);
