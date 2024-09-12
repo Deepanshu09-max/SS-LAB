@@ -4,23 +4,22 @@ MT2024039
 
 /*
 write a program to execute ls -Rl by the following system calls
-d. execv
+b. execlp
 */
 
 #include <stdio.h>
 #include <unistd.h>
 int main()
 {
-    char *path = "/bin/ls";
-    char *argv[] = {path,"-Rl",NULL};
-    execv(path, argv);
+    // it will use environment variable PATH to run executable PATH .
+    // it does not required entire file path as we did in execl().
+    char *path = "ls";
+    execlp(path, path, "-Rl", NULL);
     return 0;
 }
-
 /*
-/*
-.:
-total 204
+..:
+total 208
 -rwxrwxr-x 1 deepanshu-saini deepanshu-saini 15952 Aug 29 19:52 1
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini   641 Aug 31 01:43 10.c
 -rw-r--r-- 1 deepanshu-saini deepanshu-saini    30 Aug 31 01:44 10txt.txt
@@ -51,7 +50,7 @@ total 204
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini  3475 Aug 31 10:49 27a.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini  3494 Aug 31 10:51 27b.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini   395 Aug 31 10:52 27c.c
--rw-rw-r-- 1 deepanshu-saini deepanshu-saini  3379 Aug 31 10:53 27d.c
+-rw-rw-r-- 1 deepanshu-saini deepanshu-saini  4193 Aug 31 10:54 27d.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini     0 Aug 31 10:53 27e.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini   354 Aug 30 10:49 2.c
 -rw------- 1 deepanshu-saini deepanshu-saini     0 Aug 30 17:33 2txt.txt
@@ -65,7 +64,7 @@ total 204
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini   433 Aug 31 01:37 7.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini   672 Aug 31 01:42 8.c
 -rw-rw-r-- 1 deepanshu-saini deepanshu-saini  1127 Aug 31 01:43 9.c
--rwxrwxr-x 1 deepanshu-saini deepanshu-saini 16000 Aug 31 10:53 a.out
+-rwxrwxr-x 1 deepanshu-saini deepanshu-saini 15952 Aug 31 10:55 a.out
 prw-rw-r-- 1 deepanshu-saini deepanshu-saini     0 Aug 30 10:22 file
 -rw-rw-r-- 2 deepanshu-saini deepanshu-saini     0 Aug 29 19:52 README.md
 -rw-rw-r-- 2 deepanshu-saini deepanshu-saini     0 Aug 29 19:52 sftlh
