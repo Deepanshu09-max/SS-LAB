@@ -28,9 +28,8 @@ int main(){
 }
 
 /*
-1$ cc 24.c && ./a.out
+
 inside parent pid= 19028
 child pid= 19029
-parv@parv-ASUS-TUF-Gaming-A15-FA506IH-FA506IH:~/Desktop/SS/labexercise/Hands On 1$ inside child pid= 19029
 parent id= 2123
 */
