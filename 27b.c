@@ -1,6 +1,6 @@
 /*
-Parv Ketanbhai Gatecha
-MT2024108
+Deepanshu Saini
+MT2024039
 
 /*
 write a program to execute ls -Rl by the following system calls
