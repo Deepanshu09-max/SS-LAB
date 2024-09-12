@@ -53,7 +53,17 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+
+
+
+
+
+
+/*
+OUTPUT:
 Hi, written using original file descriptor
 Hello, written using dup() file descriptor
 Hello, written using dup2() file descriptor
 Hello, written using fcntl() file descriptor
+
+*/

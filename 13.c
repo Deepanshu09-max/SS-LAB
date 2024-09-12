@@ -31,3 +31,12 @@ void main()
         printf("Data entered");
     }
 }
+
+
+
+/*
+OUTPUT:
+Heyy There !!
+Data entered
+
+*/

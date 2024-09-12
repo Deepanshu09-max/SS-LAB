@@ -21,3 +21,10 @@ int main() {
     }
     return 0;
 }
+
+/*
+
+OUTPUT:
+
+mknod: File exists
+*/

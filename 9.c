@@ -42,3 +42,20 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
+
+/*
+OUTPUT:
+File: 8.c
+Inode: 1328746
+Number of hard links: 1
+UID: 1000
+GID: 1000
+Size: 1101 bytes
+Block size: 4096 bytes
+Number of blocks: 8
+Time of last access: Sat Aug 31 15:21:59 2024
+Time of last modification: Sat Aug 31 15:20:53 2024
+Time of last change: Sat Aug 31 15:20:53 2024
+
+*/

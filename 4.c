@@ -16,3 +16,9 @@ int main(int argc,char *argv[])
 	int e=open(argv[1],O_EXCL);
 	printf("%d \n",e);
 }
+
+/*
+OUTPUT:
+3
+4 
+*/

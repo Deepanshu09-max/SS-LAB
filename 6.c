@@ -28,3 +28,10 @@ int main() {
 
     return 0;
 }
+
+/*
+OUTPUT:
+Heyy There TA!!
+Heyy There TA!!
+
+*/

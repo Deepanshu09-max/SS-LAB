@@ -23,4 +23,10 @@ int main(){
 	close(fd);
 
 	return 0;
+
+	/*
+OUTPUT:
+File descriptor value for 3txt.txt: 3
+
+*/
 }

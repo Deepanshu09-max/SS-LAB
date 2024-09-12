@@ -24,3 +24,10 @@ int main(int argc,char *argv[]){
 	close(dfd);
 	return 0;
 }
+
+
+/*
+OUTPUT:
+file copied
+
+*/

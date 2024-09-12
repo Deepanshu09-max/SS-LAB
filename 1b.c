@@ -12,7 +12,7 @@ c. FIFO (mkfifo Library Function or mknod system call)
 #include <stdio.h>
 
 int main() {
-    int status = link("1a.c", "sftlh00");
+    int status = link("10.c", "sftlh0");
     if (status == 0) {
         printf("Hard link created successfully.\n");
     } else {
@@ -20,3 +20,8 @@ int main() {
     }
     return 0;
 }
+
+/*
+OUTPUT
+Hard link created successfully.
+*/
